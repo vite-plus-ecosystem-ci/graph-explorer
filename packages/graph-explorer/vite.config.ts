@@ -44,7 +44,9 @@ export default defineConfig(({ mode }) => {
       target: browserslistBuildTarget(),
     },
     plugins: [
-      tailwindcss(),
+      // Tailwind's own Lightning CSS pass has fixed browser targets. Vite's CSS
+      // minify compiles for build.cssTarget, which follows .browserslistrc.
+      tailwindcss({ optimize: false }),
       react(),
       babel({
         presets: [reactCompilerPreset()],
