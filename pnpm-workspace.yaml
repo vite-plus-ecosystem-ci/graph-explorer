@@ -37,8 +37,8 @@ blockExoticSubdeps: true
 # previously published version of that package
 trustPolicy: no-downgrade
 catalog:
-  vite: npm:@voidzero-dev/vite-plus-core@1.4.0
-  vite-plus: 1.4.0
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.a86fd1603196e23718d16144a472ad91b4ba21be
+  vite-plus: 0.0.0-commit.a86fd1603196e23718d16144a472ad91b4ba21be
 peerDependencyRules:
   allowAny:
     - vite
@@ -47,22 +47,22 @@ peerDependencyRules:
 minimumReleaseAgeExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
   - vite-plus
-  - '@voidzero-dev/*'
-  - '@oxc-project/*'
+  - "@voidzero-dev/*"
+  - "@oxc-project/*"
   - oxlint
-  - '@oxlint/*'
+  - "@oxlint/*"
   - oxfmt
-  - '@oxfmt/*'
+  - "@oxfmt/*"
   - oxlint-tsgolint
-  - '@oxlint-tsgolint/*'
+  - "@oxlint-tsgolint/*"
   - vitest
-  - '@vitest/*'
+  - "@vitest/*"
   - tinybench
   - yuku-core
   - yuku-parser
-  - '@yuku-core/*'
-  - '@yuku-toolchain/*'
+  - "@yuku-core/*"
+  - "@yuku-toolchain/*"
 trustPolicyExclude:
   # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
   - vite-plus
-  - '@voidzero-dev/*'
+  - "@voidzero-dev/*"
